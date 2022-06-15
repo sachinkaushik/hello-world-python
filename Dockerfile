@@ -3,6 +3,7 @@ MAINTAINER Sachin Sharma
 WORKDIR /service
 COPY requirements.txt .
 USER 0
+RUN apt-get update
 RUN apt-get install -y git
 RUN pip install -r requirements.txt
 COPY . ./
