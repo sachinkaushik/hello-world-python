@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM ubuntu
 MAINTAINER Sachin Sharma
 WORKDIR /service
 COPY requirements.txt .
